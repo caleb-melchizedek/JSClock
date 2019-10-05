@@ -1,0 +1,30 @@
+{
+  "wake": {
+    "image": "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg",
+    "text": "Wake up!"
+  },
+  "party": {
+    "image": "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg",
+    "text": "Let's party!"
+  },
+  "lunch": {
+    "image": "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg",
+    "text": "Let's have some lunch!"
+  },
+  "naptime": {
+    "image": "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat3.jpg",
+    "text": "Sleep tight!"
+  },
+  "morning": {
+    "image": "https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg",
+    "text": "Good morning!"
+  },
+  "evening": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cat_sleep.jpg",
+    "text": "Good evening!"
+  },
+  "afternoon": {
+    "image": "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg",
+    "text": "Good afternoon!"
+  }
+}
