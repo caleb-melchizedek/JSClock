@@ -1,11 +1,11 @@
 var wakeuptime = 7;
 var noon = 12;
-var lunchtime = 12;
+var lunchtime = 15;
 var naptime = lunchtime + 2;
 var partytime= false;
 var evening = 18;
 
-var event={
+var events={
   "wake": {
     "image": "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg",
     "text": "Wake up!"
@@ -61,21 +61,21 @@ if(partytime){
 else if(hours == wakeuptime){
   var {image,text}= events.wake;
   lolcatImage.src=image;
-  timeEvent= text;
+  timeEvent.innerText= text;
 }
 
 //lunch
 else if(hours == lunchtime){
   var {image,text}= events.lunch;
-  lolcatImage.src=image;
-  timeEvent= text;
+  lolcatImage.src= image;
+  timeEvent.innerText= text;
 }
 
 //nap
 else if(hours == naptime){
-  var {image,text}= events.nap;
+  var {image,text} = events.naptime;
   lolcatImage.src=image;
-  timeEvent= text;
+  timeEvent.innerText= text;
 }
 }
 
@@ -85,8 +85,9 @@ else if(hours == naptime){
 window.onload= function(){
   setInterval( function() {
     showCurrentTime();
+   
   },1000);
-  eventTriggers();
+   eventTriggers();
 }
 
 function eventTriggers(){
@@ -99,7 +100,7 @@ function eventTriggers(){
     wakeuptime= wakeSelector.value;
     partyTime= false;
   });
-
+  
   lunchSelector.addEventListener('change',function(){
     lunchtime= lunchSelector.value;
     partyTime= false;
