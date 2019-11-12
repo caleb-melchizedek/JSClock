@@ -85,7 +85,6 @@ else if(hours == naptime){
 window.onload= function(){
   setInterval( function() {
     showCurrentTime();
-   
   },1000);
    eventTriggers();
 }
